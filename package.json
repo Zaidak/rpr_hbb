@@ -1,0 +1,24 @@
+{
+  "name": "r_ctrl_test_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rgb.js",
+  "dependencies": {
+    "pigpio": "^3.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaidak/rpr_hbb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zaidak/rpr_hbb/issues"
+  },
+  "homepage": "https://github.com/Zaidak/rpr_hbb#readme"
+}
