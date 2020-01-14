@@ -73,14 +73,6 @@ window.addEventListener("load", function(){ //when page loads
     colorShow.style.backgroundColor = rgb.toRgbString(); //update the "Current color"
     socket.emit("rgbLed", rgb); //send the updated color to RGB LED via WebSocket
   });
-  picker.addEventListener("input", function() { //add event listener for when colorpicker changes
-    rgb.red = w3color(this.value).red; //Update the RED color according to the picker
-    rgb.green = w3color(this.value).green; //Update the GREEN color according to the picker
-    colorShow.style.backgroundColor = rgb.toRgbString();  //update the "Current color"
-    rSlider.value = rgb.red;  //Update the RED slider position according to the picker
-    gSlider.value = rgb.green;  //Update the GREEN slider position according to the picker
-   socket.emit("rgbLed", rgb);  //send the updated color to RGB LED via WebSocket
-  });
 });
 </script>
 </html>
